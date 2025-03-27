@@ -6,4 +6,5 @@ import com.oxo.gala_food.Gala_Food.response.UserResponse;
 public interface UserService {
 
     UserResponse registerUser(UserRequest request);
+    String findByUserId();
 }

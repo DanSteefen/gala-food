@@ -1,10 +1,11 @@
-package com.oxo.gala_food.Gala_Food.service;
+package com.oxo.gala_food.Gala_Food.service.impl;
 
 import com.oxo.gala_food.Gala_Food.repository.FoodRepository;
 import com.oxo.gala_food.Gala_Food.model.Food;
 import com.oxo.gala_food.Gala_Food.request.FoodRequest;
 import com.oxo.gala_food.Gala_Food.response.FoodResponse;
 
+import com.oxo.gala_food.Gala_Food.service.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -23,7 +24,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
-public class FoodServiceImpl implements FoodService{
+public class FoodServiceImpl implements FoodService {
 
     @Autowired
     private S3Client s3Client;
